@@ -61,3 +61,10 @@ h2{
 h3{
     text-align: center;
 }
+
+table{
+    border: 1px;
+    border-color: black;
+    border-radius: 10px;
+
+}
