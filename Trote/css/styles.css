@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background-color: #384c8c1c;
+    background-color: rgba(56, 76, 140, 0.11);
     padding: 10px;
     text-align: center;
     position: relative;
@@ -26,14 +26,12 @@ nav a {
     padding: 10px 15px;
     font-size: 18px;
     display: inline-block;
-    position: relative;
 }
 
 nav a:hover {
-    background: #384c8c1e;
+    background: rgba(56, 76, 140, 0.12);
     border-radius: 10px;
 }
-
 
 nav img {
     width: 50px;
@@ -41,7 +39,7 @@ nav img {
     border-radius: 10px;
     position: absolute;
     top: 1px;
-    right: 10px; 
+    right: 10px;
     margin: 5px;
 }
 
@@ -54,30 +52,59 @@ nav img {
     text-align: justify;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-div table th{
-    border: 2px;
-    border-color: black;
+table {
+    margin: 0 auto;
+    border: 2px solid black;
     border-radius: 10px;
-    text-align: center;
-
+    border-collapse: collapse;
 }
-div table td{
-    border-color: black;
-    border-radius: 2px;
-    text-align: center;
 
+
+.blue{
+    background-color: #384c8c;
 }
-div table ul li{
-    border-color: black;
-    border-radius: 2px;
+.orange{
+    background-color: orange;
+}
+.black{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.purple{
+    background-color: rgba(128, 0, 128, 0.651);
+}
+.green{
+    background-color: rgba(0, 255, 0, 0.774);
+}
+.red{
+    background-color: rgba(255, 0, 0, 0.774);
+}
+
+
+table tr th {
+    border: 2px solid black;
+    padding: 10px;
+    color: white;
+}
+
+table tr td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table ul {
+    padding: 0;
+}
+
+table ul li {
     text-align: justify;
-
+    list-style-position: inside;
 }
