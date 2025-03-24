@@ -108,3 +108,19 @@ table ul li {
     text-align: justify;
     list-style-position: inside;
 }
+
+.forms{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: justify;
+    margin: auto;
+
+}
+.campos{
+    margin: 10px;
+    padding: 10px;
+}
+
+.campos label{
+    margin: 5px;
+}

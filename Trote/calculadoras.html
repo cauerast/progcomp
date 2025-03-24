@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trote solidario - 2025</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="/scripts/scripts.js"></script>
 </head>
 <body>
     <header> Trote Solidário - 2025 </header>
@@ -19,6 +20,30 @@
             <a href="observações.html">Observações</a>
             <a href="calculadoras.html">Calculadoras</a>
         </div>
+        <img src="images/trotesolidario2025.jpg" alt="trotesolidario2025">
     </nav>
+    <div class="container">
+
+
+        <h2> Calculadoras de pontuação </h2>
+        <div class="forms">
+            <form>
+                <div class="campos">
+                    <label>Ação Social: </label>
+                    <input type="number" id="AcaoSocial">
+                </div>
+                <div class="campos">
+                    <label>Homenagem: </label>
+                    <input type="number" id="homenagem">
+                </div>
+                <div class="campos">
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <label id="resposta"></label>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
 </body>
 </html
