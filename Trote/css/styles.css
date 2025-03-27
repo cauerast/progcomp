@@ -110,15 +110,36 @@ table ul li {
 }
 
 .forms{
-    border: 1px solid black;
+    border: 1px solid #384c8c;
     border-radius: 10px;
     text-align: justify;
     margin: auto;
+    background-color: #384c8c1c;
+    box-shadow: 5px 5px 0px #384c8c7c;
 
+}
+
+.forms input{
+    border: 1px solid #384c8c;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+    color: #000000;
+}
+
+.forms button{
+    border: 1px solid #384c8c;
+    background-color: #384c8c9c;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+    padding: 5px 10px 5px;
+    color: white;
 }
 .campos{
     margin: 10px;
     padding: 10px;
+    color: #384c8c;
 }
 
 .campos label{
