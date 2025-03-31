@@ -32,7 +32,7 @@ function calcular(){
             pontosKitSup = 30 * kitAlimentacao
         }
     }
-    alert(pontosKit)
+    alert(pontosKitSup)
 
     soma += (30 * kitAlimentacao);
     let suplemento = Number(document.getElementById("suplemento").value);
