@@ -1,6 +1,7 @@
 function calcular() {
     let soma = 0;
     let pontosKitSup = 0;
+    let pontosDoacaoSangue = 0;
     let equipe = document.getElementById("equipe").value;
 
     let acaoSocial = Number(document.getElementById("acaoSocial").value) || 0;
@@ -31,8 +32,9 @@ function calcular() {
     soma += oleo;
 
     let doacaoSangue = Number(document.getElementById("doacaoSangue").value) || 0;
-    soma
-    // Verificação das equipes
+    soma += doacaoSangue
+
+
     if (equipe === "Laranja") {
         if (kitAlimentacao >= 97 && suplemento >= 49) {
             pontosKitSup = 5000 + ((kitAlimentacao - 97) * 30) + ((suplemento - 49) * 15);
@@ -51,14 +53,123 @@ function calcular() {
         }
     }
     if (equipe === "Laranja") {
-        if (doacaoSangue >= 49){
-
+        if (doacaoSangue >= 49) {
+            pontosDoacaoSangue = 2500 + ((doacaoSangue - 49) * 20);
+        }
+        else {
+            pontosDoacaoSangue = doacaoSangue * 20;
         }
     }
 
 
+    if (equipe === "Preta") {
+        if (kitAlimentacao >= 103 && suplemento >= 52) {
+            pontosKitSup = 5000 + ((kitAlimentacao - 103) * 30) + ((suplemento - 52) * 15);
+        }
+        else if (kitAlimentacao >= 82 && suplemento >= 42) {
+            pontosKitSup = (0.8 * 5000) + ((kitAlimentacao - 82) * 30) + ((suplemento - 42) * 15);
+        }
+        else if (kitAlimentacao >= 52 && suplemento >= 26) {
+            pontosKitSup = (0.5 * 5000) + ((kitAlimentacao - 52) * 30) + ((suplemento - 26) * 15);
+        }
+        else if (kitAlimentacao >= 21 && suplemento >= 10) {
+            pontosKitSup = (0.2 * 5000) + ((kitAlimentacao - 21) * 30) + ((suplemento - 10) * 15);
+        }
+        else {
+            pontosKitSup = 0
+        }
+    }
+    if (equipe === "Preta") {
+        if (doacaoSangue >= 52) {
+            pontosDoacaoSangue = 2500 + ((doacaoSangue - 52) * 20);
+        }
+        else {
+            pontosDoacaoSangue = doacaoSangue * 20;
+        }
+    }
 
-    soma = soma + pontosKitSup;
+
+    if (equipe === "Roxa") {
+        if (kitAlimentacao >= 102 && suplemento >= 51) {
+            pontosKitSup = 5000 + ((kitAlimentacao - 102) * 30) + ((suplemento - 51) * 15);
+        }
+        else if (kitAlimentacao >= 82 && suplemento >= 41) {
+            pontosKitSup = (0.8 * 5000) + ((kitAlimentacao - 82) * 30) + ((suplemento - 41) * 15);
+        }
+        else if (kitAlimentacao >= 51 && suplemento >= 26) {
+            pontosKitSup = (0.5 * 5000) + ((kitAlimentacao - 51) * 30) + ((suplemento - 26) * 15);
+        }
+        else if (kitAlimentacao >= 20 && suplemento >= 10) {
+            pontosKitSup = (0.2 * 5000) + ((kitAlimentacao - 20) * 30) + ((suplemento - 10) * 15);
+        }
+        else {
+            pontosKitSup = 0
+        }
+    }
+    if (equipe === "Roxa") {
+        if (doacaoSangue >= 51) {
+            pontosDoacaoSangue = 2500 + ((doacaoSangue - 51) * 20);
+        }
+        else {
+            pontosDoacaoSangue = doacaoSangue * 20;
+        }
+    }
+
+
+    if (equipe === "Verde") {
+        if (kitAlimentacao >= 88 && suplemento >= 44) {
+            pontosKitSup = 5000 + ((kitAlimentacao - 88) * 30) + ((suplemento - 44) * 15);
+        }
+        else if (kitAlimentacao >= 70 && suplemento >= 35) {
+            pontosKitSup = (0.8 * 5000) + ((kitAlimentacao - 70) * 30) + ((suplemento - 35) * 15);
+        }
+        else if (kitAlimentacao >= 44 && suplemento >= 22) {
+            pontosKitSup = (0.5 * 5000) + ((kitAlimentacao - 44) * 30) + ((suplemento - 22) * 15);
+        }
+        else if (kitAlimentacao >= 18 && suplemento >= 9) {
+            pontosKitSup = (0.2 * 5000) + ((kitAlimentacao - 18) * 30) + ((suplemento - 9) * 15);
+        }
+        else {
+            pontosKitSup = 0
+        }
+    }
+    if (equipe === "Verde") {
+        if (doacaoSangue >= 44) {
+            pontosDoacaoSangue = 2500 + ((doacaoSangue - 44) * 20);
+        }
+        else {
+            pontosDoacaoSangue = doacaoSangue * 20;
+        }
+    }
+
+
+    if (equipe === "Vermelha") {
+        if (kitAlimentacao >= 93 && suplemento >= 47) {
+            pontosKitSup = 5000 + ((kitAlimentacao - 93) * 30) + ((suplemento - 47) * 15);
+        }
+        else if (kitAlimentacao >= 74 && suplemento >= 38) {
+            pontosKitSup = (0.8 * 5000) + ((kitAlimentacao - 74) * 30) + ((suplemento - 38) * 15);
+        }
+        else if (kitAlimentacao >= 47 && suplemento >= 24) {
+            pontosKitSup = (0.5 * 5000) + ((kitAlimentacao - 47) * 30) + ((suplemento - 24) * 15);
+        }
+        else if (kitAlimentacao >= 19 && suplemento >= 9) {
+            pontosKitSup = (0.2 * 5000) + ((kitAlimentacao - 19) * 30) + ((suplemento - 9) * 15);
+        }
+        else {
+            pontosKitSup = 0
+        }
+    }
+    if (equipe === "Vermelha") {
+        if (doacaoSangue >= 47) {
+            pontosDoacaoSangue = 2500 + ((doacaoSangue - 47) * 20);
+        }
+        else {
+            pontosDoacaoSangue = doacaoSangue * 20;
+        }
+    }
+
+    soma = soma + pontosKitSup + pontosDoacaoSangue;
     document.getElementById("soma").innerHTML = `${soma.toFixed(2)} pts`;
 }
 
