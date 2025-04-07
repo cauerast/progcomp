@@ -51,8 +51,7 @@ function calcular() {
         else {
             pontosKitSup = 0
         }
-    }
-    if (equipe === "Laranja") {
+        
         if (doacaoSangue >= 49) {
             pontosDoacaoSangue = 2500 + ((doacaoSangue - 49) * 20);
         }
@@ -62,7 +61,7 @@ function calcular() {
     }
 
 
-    if (equipe === "Preta") {
+    else if (equipe === "Preta") {
         if (kitAlimentacao >= 103 && suplemento >= 52) {
             pontosKitSup = 5000 + ((kitAlimentacao - 103) * 30) + ((suplemento - 52) * 15);
         }
@@ -78,8 +77,7 @@ function calcular() {
         else {
             pontosKitSup = 0
         }
-    }
-    if (equipe === "Preta") {
+
         if (doacaoSangue >= 52) {
             pontosDoacaoSangue = 2500 + ((doacaoSangue - 52) * 20);
         }
@@ -89,7 +87,7 @@ function calcular() {
     }
 
 
-    if (equipe === "Roxa") {
+    else if (equipe === "Roxa") {
         if (kitAlimentacao >= 102 && suplemento >= 51) {
             pontosKitSup = 5000 + ((kitAlimentacao - 102) * 30) + ((suplemento - 51) * 15);
         }
@@ -105,8 +103,7 @@ function calcular() {
         else {
             pontosKitSup = 0;
         }
-    }
-    if (equipe === "Roxa") {
+
         if (doacaoSangue >= 51) {
             pontosDoacaoSangue = 2500 + ((doacaoSangue - 51) * 20);
         }
@@ -116,7 +113,7 @@ function calcular() {
     }
 
 
-    if (equipe === "Verde") {
+    else if (equipe === "Verde") {
         if (kitAlimentacao >= 88 && suplemento >= 44) {
             pontosKitSup = 5000 + ((kitAlimentacao - 88) * 30) + ((suplemento - 44) * 15);
         }
@@ -132,8 +129,8 @@ function calcular() {
         else {
             pontosKitSup = 0
         }
-    }
-    if (equipe === "Verde") {
+    
+
         if (doacaoSangue >= 44) {
             pontosDoacaoSangue = 2500 + ((doacaoSangue - 44) * 20);
         }
@@ -143,7 +140,7 @@ function calcular() {
     }
 
 
-    if (equipe === "Vermelha") {
+   else {
         if (kitAlimentacao >= 93 && suplemento >= 47) {
             pontosKitSup = 5000 + ((kitAlimentacao - 93) * 30) + ((suplemento - 47) * 15);
         }
@@ -159,8 +156,7 @@ function calcular() {
         else {
             pontosKitSup = 0
         }
-    }
-    if (equipe === "Vermelha") {
+  
         if (doacaoSangue >= 47) {
             pontosDoacaoSangue = 2500 + ((doacaoSangue - 47) * 20);
         }
