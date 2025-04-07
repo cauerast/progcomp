@@ -103,7 +103,7 @@ function calcular() {
             pontosKitSup = (0.2 * 5000) + ((kitAlimentacao - 20) * 30) + ((suplemento - 10) * 15);
         }
         else {
-            pontosKitSup = 0
+            pontosKitSup = 0;
         }
     }
     if (equipe === "Roxa") {
