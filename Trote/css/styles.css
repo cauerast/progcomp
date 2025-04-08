@@ -93,7 +93,7 @@ h4, h5{
 .red { background-color: red; color: white; }
 
 table {
-    margin: 0 auto;
+    margin: 15px auto;
     width:50%;
     border: 2px solid black;
     border-radius: 10px;
