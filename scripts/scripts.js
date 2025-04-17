@@ -168,5 +168,3 @@ function calcular() {
     soma = soma + pontosKitSup + pontosDoacaoSangue;
     document.getElementById("soma").innerHTML = `${soma.toFixed(2)} pts`;
 }
-
-// fazer o if e else da doação de sangue para todos os times e os if else padrao tambem e testar o code
