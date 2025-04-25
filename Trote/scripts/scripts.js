@@ -32,7 +32,7 @@ function calcular() {
     soma += oleo;
 
     let doacaoSangue = Number(document.getElementById("doacaoSangue").value) || 0;
-    soma += doacaoSangue
+    
 
 
     if (equipe === "Laranja") {
