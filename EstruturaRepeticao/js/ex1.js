@@ -6,7 +6,6 @@ function pesquisaSatisfacao(){
     let satisfeito = 0, insatisfeito = 0;
     while(count <= users){
         nota = Number(prompt(`Informe a nota do participante ${count}: `));
-        soma = soma + nota;
         if(nota >= 8 && nota <= 10){
             satisfeito++;
         }
@@ -18,9 +17,10 @@ function pesquisaSatisfacao(){
             continue;
         }
         count++;
+        soma = soma + nota;
     }
     let media = soma / users;
-    window.alert(`A media das notas: ${media}`);
+    window.alert(`A media das notas: ${(media).toFixed(2)}`);
     window.alert(`Quantidade de pessoas satisfeitas: ${satisfeito}`);
     window.alert(`Quantidade de pessoas insatisfeitas: ${insatisfeito}`);
 }
