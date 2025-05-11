@@ -1,28 +1,29 @@
 function pesquisaSatisfacao(){
-    let count = 1
-    let soma = 0;
-    let nota;
     let users = 10;
+    let count = 1;
+    let nota = 0;
+    let soma = 0;
     let satisfeito = 0, insatisfeito = 0;
+
     while(count <= users){
-        nota = Number(prompt(`Informe a nota do participante ${count}: `));
+        nota = Number(prompt(`Nota de satisfacao participante ${count}`));
+
         if(nota >= 8 && nota <= 10){
             satisfeito++;
         }
-        else if(nota >= 0 && nota < 5 ){
+        else if(nota < 5 && nota >= 0){
             insatisfeito++;
         }
         else if(nota < 0 || nota > 10){
-            window.alert(`Informe uma nota válida!`);
+            window.alert(`Insira uma nota de 0 a 10`);
             continue;
         }
+        soma += nota;
         count++;
-        soma = soma + nota;
     }
-    let media = soma / users;
-    window.alert(`A media das notas: ${(media).toFixed(2)}`);
-    window.alert(`Quantidade de pessoas satisfeitas: ${satisfeito}`);
-    window.alert(`Quantidade de pessoas insatisfeitas: ${insatisfeito}`);
-}
-// Cauê Silva Rasteiro - C.C - 2° bimestre; :) 
 
+    let media = soma / users;
+    window.alert(`Media das notas: ${media.toFixed(2)}`);
+    window.alert(`Total de pessoas satisfeitas: ${satisfeito}`);
+    window.alert(`Total de pessoas insatisfeitas: ${insatisfeito}`);
+}
