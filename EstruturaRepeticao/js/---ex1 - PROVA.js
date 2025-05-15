@@ -1,3 +1,4 @@
+// ex 1
 function list(){
     let group = 1;
     let aux;
@@ -37,3 +38,4 @@ function list(){
         group++;
     }
 }
+// Cauê Silva Rasteiro -- C.C

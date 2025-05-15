@@ -1,3 +1,4 @@
+// ex 3
 function calcular(){
     let count = 1;
     let users = 8;
@@ -40,3 +41,4 @@ function calcular(){
     window.alert(`Porcentagem de pessoas na primeira faixa etaria: ${porcPrimeira}%`)
     window.alert(`Porcentagem de pessoas na primeira faixa etaria: ${porcUltima}%`)
 }
+// Cauê Silva Rasteiro -- C.C
