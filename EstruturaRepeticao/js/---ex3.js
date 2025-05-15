@@ -2,8 +2,8 @@
 function calcular(){
     let count = 1;
     let users = 8;
-    let idade;
-    let f1 = 0, f2 = 0, f3 = 0, f4 = 0, f5 = 0
+    let idade = 0;
+    let f1 = 0, f2 = 0, f3 = 0, f4 = 0, f5 = 0;
     while(count <= users){
         idade = Number(prompt(`Informe a idade da pessoa ${count}`));
         if(idade <= 15 && idade > 0){
@@ -39,6 +39,6 @@ function calcular(){
         5° --> ${f5}`);
 
     window.alert(`Porcentagem de pessoas na primeira faixa etaria: ${porcPrimeira}%`)
-    window.alert(`Porcentagem de pessoas na primeira faixa etaria: ${porcUltima}%`)
+    window.alert(`Porcentagem de pessoas na ultima faixa etaria: ${porcUltima}%`)
 }
 // Cauê Silva Rasteiro -- C.C
