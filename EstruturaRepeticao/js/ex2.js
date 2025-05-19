@@ -1,4 +1,4 @@
-// ex 2 feito por mim
+// ex 2 by cauerast
 /*
 function teatro(){
     let valorIngresso = 5;

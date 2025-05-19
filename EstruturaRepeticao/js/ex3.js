@@ -1,4 +1,4 @@
-// ex 3 feito por mim
+// ex 3 by cauerast
 /*
 function calcular(){
     let idade = 0;

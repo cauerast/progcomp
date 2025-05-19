@@ -1,4 +1,4 @@
-// ex 1 feito por mim
+// ex 1 by cauerast
 /*
 function list(){
     let grupo = 1;
