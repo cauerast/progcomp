@@ -41,3 +41,5 @@ Valor total das compras a prazo: R$${aPrazo.toFixed(2)}\n
 Valor total das compras efetuadas: R$${(aVista + aPrazo).toFixed(2)}\n
 Valor da primeira prestação das compras a prazo juntas em 3x: R$${(aPrazo/3).toFixed(2)}`);
 }
+
+// 
