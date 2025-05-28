@@ -1,5 +1,4 @@
 // ex 4 by cauerast
-/*
 function tabuadaX(){
     let number = Number(prompt(`Digite um numero e veja seus multiplos: `));
     let table = `Tabuada do numero ${number}!\n\n`;
@@ -10,7 +9,7 @@ function tabuadaX(){
     window.alert(table);
 
 }
-*/
+
 
 // 2 
 /*
