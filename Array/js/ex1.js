@@ -1,3 +1,4 @@
+/*
 function ex1(){
     let array = [];
     let pares = ""
@@ -24,4 +25,30 @@ function ex1(){
         Quantidade de numeros pares: ${qtdPares}
         numeros impares: ${impares}
         Quantidade de numeros impares: ${qtdImpares}`)
+}
+*/
+// ou tambem 
+
+function ex1(){
+    let array = [];
+    let pares = [];
+    let impares = [];
+
+    for(let i = 0; i < 6; i++){
+        array.push(Number(prompt(`Informe o ${i + 1}° nùmero: `)))
+    }
+
+    for(let i = 0; i < 6; i++){
+        if(array[i] % 2 == 0){
+            pares.push(array[i])
+        }
+        else{
+            impares.push(array[i]);
+        }
+    }
+
+    console.log(`numeros pares: ${pares}
+        Quantidade de numeros pares: ${impares.length}
+        numeros impares: ${impares}
+        Quantidade de numeros impares: ${impares.length}`)
 }
