@@ -1,3 +1,4 @@
+// ex 1 by cauerast
 /*
 function ex1(){
     let array = [];

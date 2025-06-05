@@ -1,3 +1,4 @@
+// ex 2 by cauerast
 function ex2(){
     let a = [];
     for(let i = 0; i < 10; i++){
