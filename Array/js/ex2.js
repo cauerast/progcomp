@@ -1,8 +1,7 @@
 function ex2(){
-    let a = []
-    let i = 0
+    let a = [];
     for(let i = 0; i < 10; i++){
-        a.push(Number(prompt(`Informe o ${i + 1}° numero: `)))
+        a.push(Number(prompt(`Informe o ${i + 1}° numero: `)));
     }
     
     for(let i = 0; i < 10; i++){
@@ -15,7 +14,6 @@ function ex2(){
         }
     }
 
-    console.log(a);
-    
+    console.log(a);  
 }
 
