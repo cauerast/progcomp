@@ -23,5 +23,5 @@ function ex6(){
     }
 
 
-    console.log(`O numero ${search} aparece ${qtdAparicoes}x, nas posições: ${posicoes.join(`, `)}`)
+    console.log(`O numero ${search} aparece ${qtdAparicoes}x, nas posições: ${posicoes.join(`, `)}`);
 }
