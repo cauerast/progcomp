@@ -1,4 +1,4 @@
-// ex 5 by Cauê Silva Rasteiro - 26033 - C.C
+// ex 1 by Cauê Silva Rasteiro - 26033 - C.C
 
 function ex1(){
     let libraly = [];
