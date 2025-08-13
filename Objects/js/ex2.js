@@ -9,11 +9,29 @@ function ex2(){
 
     for(let i = 0;  i < 6; i++){
 
+        let nome;
+        let cargo;
+        let salario;
+        let tempoServico;
+
+        do {
+            nome = String(prompt(`Insira o nome do usuario #${i + 1}: `));
+        } while (!isNaN(nome));
+        do {
+            cargo = String(prompt(`Insira o cargo do usuario #${i + 1}: `).toLowerCase());
+        } while (!isNaN(cargo));
+        do {
+            salario = Number(prompt(`Insira o salario do usuario #${i + 1}: `));
+        } while (isNaN(salario));
+        do {
+            tempoServico = Number(prompt(`Insira o tempo de serviço do usuario #${i + 1}: `));
+        } while (isNaN(tempoServico));
+
         let funcionario = {
-            nome: String(prompt(`Insira o nome do usuario #${i + 1}: `)),
-            cargo: String(prompt(`Insira o cargo do usuario #${i + 1}: `).toLowerCase()), 
-            salario: Number(prompt(`Insira o salario do usuario #${i + 1}: `)),
-            tempoServico: Number(prompt(`Insira o tempo de serviço do usuario #${i + 1}: `))
+            nome: nome,
+            cargo: cargo, 
+            salario: salario,
+            tempoServico: tempoServico
         }
 
         funcionarios.push(funcionario);
@@ -25,7 +43,6 @@ function ex2(){
         if(funcionarios[i].salario > 5000 && funcionarios[i].tempoServico > 5){
             salarioMaiorQue5k.push(funcionarios[i]);
         }
-        
         if(funcionarios[i].salario > maiorSalario){
             maiorSalario = funcionarios[i];
         }
