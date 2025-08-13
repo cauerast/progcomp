@@ -15,7 +15,7 @@ function ex1(){
         let pages;
 
         do {
-            titulo = String(prompt(`Insira o titulo do ${i + 1}° livro: `));
+            titulo = String(prompt(`Insira o titulo do ${i + 1}° livro: `)).trim();
         } while(!isNaN(titulo));
 
         do {

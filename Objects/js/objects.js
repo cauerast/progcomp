@@ -70,3 +70,18 @@ function libraly(){
 
     console.log(libraly);
 }
+
+
+
+
+
+
+
+
+
+let carro = {
+    rodas: 4,
+    marca: "fiat",
+    cor: laranja,
+    nome: fastback
+}
