@@ -31,7 +31,7 @@ function ex1(){
     let diagSec = [];
 
     for(let i = 0; i < matriz.length; i++){
-        diagSec.push(matriz[i][(matriz.length - 1) - i]);
+        diagSec.push(matriz[i][(matriz[i].length - 1) - i]);
     }
 
     console.log("soma de todos os elementos: " + soma);
