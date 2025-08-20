@@ -37,5 +37,4 @@ function ex1(){
     console.log("soma de todos os elementos: " + soma);
     console.log("quantidade de numeros pares: " + qtdPares + " | numeros pares: " + pares.join(", "));
     console.log("valores da diagonal secundaria: " + diagSec.join(", "));
-
 }
