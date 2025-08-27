@@ -6,12 +6,24 @@ function ex3(){
     // itens inseridos = índice de poluição
 
     //input
+    let regioes = [];
+    for(let i = 0; i < 5; i++){
+        regioes[i] = prompt(`Insira o nome da #${i + 1} regiao: `);
+    }
+    
+    let dias = [];
+    for(let j = 0; j < 5; j++){
+        do {
+            dias[j] = Number(prompt(`Insira o #${j + 1} dia: `));
+        } while(isNaN(dias[j]));
+    }
+
     let matriz = [];
     for(let i = 0; i < 5; i++){
         matriz[i] = [];
         for(let j = 0; j < 5; j++){
             do {
-               matriz[i][j] = Number(prompt(`Insira o indice de poluicao registrado na regiao: ${i} e no dia: ${j}`));
+               matriz[i][j] = Number(prompt(`Insira o indice de poluicao registrado na regiao ${regioes[i]} e no dia ${dias[j]}`));
             } while (isNaN(matriz[i][j]) || matriz[i][j] > 500 || matriz[i][j] < 0);
         }
     }
@@ -44,7 +56,7 @@ function ex3(){
         for(let j = 0; j < matriz[i].length; j++){
             if(matriz[i][j] > maiorIndice){
                 maiorIndice = matriz[i][j];
-                nomeMaiorIndice = `A regiao ${i} teve o maior indice de poluicao registrado no dia ${j}. Indice: ${maiorIndice}`
+                nomeMaiorIndice = `A regiao ${regioes[i]} teve o maior indice de poluicao registrado no dia ${dias[j]}. Indice: ${maiorIndice}`
             }
             if(matriz[i][j] > 300){
                 qtdIndiceSuperior300++
@@ -65,7 +77,7 @@ function ex3(){
     for(let i = 0; i < matriz.length; i++){
         if(mediaIndiceRegioes[i] < menorMediaIndice){
             menorMediaIndice = mediaIndiceRegioes[i];
-            nomeMenorMediaIndice = `Regiao ${i} teve em media o menor indice de poluicao em seus 5 dias. Indice medio: ${menorMediaIndice}.`
+            nomeMenorMediaIndice = `Regiao ${regioes[i]} teve em media o menor indice de poluicao em seus 5 dias. Indice medio: ${menorMediaIndice}.`
         }
         
     }
