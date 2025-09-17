@@ -22,5 +22,5 @@ for(let i = 1; i <= cases; i++){
     for(let j = 0; j < numero.length; j++){
         soma += leds[numero[j]]
     }
-    console.log(`${soma} leds`)
+    console.log(`${soma} leds`);
 }

@@ -15,6 +15,7 @@ function ex2(){
 
     // output da matriz
     console.log(matriz)
+    console.table(matriz);
 
     // total vendido por vendedor
     let vendasVendedor = [];
@@ -64,7 +65,4 @@ function ex2(){
 
     console.log(`Maior valor individual de venda: R$`, maiorValor, "\n" , posicao);
     console.log("Media geral: ", somaTotal);
-    
-
-
 }
