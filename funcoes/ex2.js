@@ -1,17 +1,19 @@
+
 function main(){
-    let x = 10
-    console.log(`dobro do numero: ${mostrarDobro(x)}`);
+    let a = 10
+    alterarNumero(a)
+    console.log(a)
 
-    let quadrado = calcularQuadrado(x)
-    console.log(`quadrado do numero: ${quadrado}`);
+    let v = [10, 20, 30]
+    alterarVetor(v)
+    console.log(v)
+}
+function alterarNumero(a){
+    let x = 100
+}
+function alterarVetor(v){
+    v[0] = 100
 }
 
-function mostrarDobro(x){
-    return x * 2;
-}
-
-function calcularQuadrado(x){
-    return x ** 2;
-}
 
 main();
