@@ -22,7 +22,7 @@ function removerAluno(alunos){
         if(alunos[i].nome == nomeRemove){
             alunos.splice(i, 1);
             alert("aluno removido!")
-            return 
+            return
         }
     }
     console.log("Aluno nao encontrado!")
