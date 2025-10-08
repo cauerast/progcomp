@@ -69,7 +69,7 @@ function exibirMedia(funcionarios){
     }
     console.log(`Media salarial da empresa: R$: R$${soma / funcionarios.length}`);
 }
-function promoverFuncionario(){
+function promoverFuncionario(funcionarios){
     let soma = 0
     for(let i = 0; i < funcionarios.length; i++){
         soma += funcionarios[i].salario
@@ -93,7 +93,7 @@ function promoverFuncionario(){
     }
     return "Funcionario nao encontrado!"
 }
-function maiorSalario(){
+function maiorSalario(funcionarios){
     let maiorSalario = funcionarios[0].salario;
     let nome = ""
     for(let i = 0; i < funcionarios.length; i++){
