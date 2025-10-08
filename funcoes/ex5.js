@@ -16,7 +16,7 @@ function cadastrarNovo(alunos){
     }
 }
 function removerAluno(alunos){
-    let nomeRemove = prompt("Informe o nome do aluno para remover: ");
+    let nomeRemove = prompt("Informe o nome do aluno para remover: ").trim();
 
     for(let i = 0; i < alunos.length; i++){
         if(alunos[i].nome == nomeRemove){
