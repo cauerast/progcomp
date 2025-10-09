@@ -95,11 +95,11 @@ function promoverFuncionario(funcionarios){
 }
 function maiorSalario(funcionarios){
     let maiorSalario = funcionarios[0].salario;
-    let nome = ""
+    let nome = funcionarios[0].nome;
     for(let i = 0; i < funcionarios.length; i++){
         if(funcionarios[i].salario > maiorSalario){
             maiorSalario = funcionarios[i].salario
-            nome = funcionarios[i].nome;
+            nome = funcionarios[i].nome
         }
     }
     console.log(`O funcionario ${nome} obteve o melhor salario (R$${maiorSalario})`)
@@ -125,7 +125,7 @@ function main(){
             default: console.log("Valor invalido");
 
         }
-    } while(opcao != 8)
+    } while(opcao != 10)
     console.table(array)
 }
 main();
