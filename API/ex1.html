@@ -6,27 +6,29 @@
 </head>
 <body>
     <h1>Lista de Usuários</h1>
-    <button onclick="carregarUsuarios()">Carregar Dados</button>
+    <button onclick="carregarUsuarios()">Consultar enderecos</button>
     <ul id="listaUsuarios"></ul>
     <script>
-        // async = função assíncrona que pode esperar por respostas
     async function carregarUsuarios(){
         try{
-            // await = aguarda resposta do servidor
             const resposta = await fetch("https://jsonplaceholder.typicode.com/users");
             const usuarios = await resposta.json();
             const lista = document.getElementById("listaUsuarios");
             lista.innerHTML = ""; // limpa lista
 
             for (let i = 0; i < usuarios.length; i++) {
-                const li = document.createElement("li");
-                li.textContent = `${usuarios[i].name} - ${usuarios[i].email}`;
-                lista.appendChild(li);
-        }
-      } catch (error) {
+                const name = document.createElement("li");
+                name.textContent = `${usuarios[i].name}`;
+                lista.appendChild(name);
+
+                const address = document.createElement("li");
+                address.textContent = `${usuarios[i].address.street}, ${usuarios[i].address.suite}, ${usuarios[i].address.city}, ${usuarios[i].address.zipcode}`;
+                lista.appendChild(address)
+            }
+        } catch(error){
             console.error("Erro ao carregar usuários:", error);
             alert("Não foi possível carregar os dados da API.");
-      }
+        }
     }
   </script>
 </body>
