@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Consumo de API</title>
+</head>
+<body>
+    <h1>Movies search</h1>
+    <br>
+    <input type="text" name="qtdMovies" id="input">
+    <button onclick="showMovies()">Search Movie</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="movieList"></div>
+    <script>
+    async function showMovies(){
+        try{
+            const input = document.getElementById("input").value
+            const response = await fetch(`https://www.omdbapi.com/?apikey=fcbf6548&t=${input.split(" ").join("+")}`);
+            const movies = await response.json();
+            const div = document.getElementById("movieList");
+            div.innerHTML = "";
+
+            const img = document.createElement("img")
+            img.src = `${movies.Poster}`;
+            div.appendChild(img)
+
+            const h2 = document.createElement("h2");
+            h2.textContent = `${movies.Title}`;
+            div.appendChild(h2);
+            
+            const genre = document.createElement("p");
+            genre.textContent = `${movies.Genre}`;
+            div.appendChild(genre);
+
+            const writer = document.createElement("p");
+            writer.textContent = `Writers: ${movies.Writer}`;
+            div.appendChild(writer);
+
+            const released = document.createElement("p");
+            released.textContent = `Released: ${movies.Released}`;
+            div.appendChild(released);
+
+            
+        } catch(error){
+            console.error("erro ao carregar api", error)
+        }
+    }
+  </script>
+</body>
+</html>
