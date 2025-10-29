@@ -17,12 +17,9 @@
             lista.innerHTML = ""; // limpa lista
 
             for (let i = 0; i < usuarios.length; i++) {
-                const name = document.createElement("li");
-                name.textContent = `${usuarios[i].name}`;
-                lista.appendChild(name);
-
+                
                 const address = document.createElement("li");
-                address.textContent = `${usuarios[i].address.street}, ${usuarios[i].address.suite}, ${usuarios[i].address.city}, ${usuarios[i].address.zipcode}`;
+                address.textContent = `${usuarios[i].name} - ${usuarios[i].address.street} - ${usuarios[i].address.suite} - ${usuarios[i].address.city} - ${usuarios[i].address.zipcode}`;
                 lista.appendChild(address)
             }
         } catch(error){
